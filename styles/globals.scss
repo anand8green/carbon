@@ -2,7 +2,7 @@
 
 html,
 body {
-  padding: 1rem;
+  padding: 0.5rem;
   margin: 0;
   font-family: Thin,
 }
@@ -68,54 +68,4 @@ img{
   object-fit: contain;
 
 }
-}
-
-.box{
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 30rem;
-}
-.circle {
-  width: 100px;
-  height: 100px;
-  background-color: darkgray;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-justify-content: center;
-margin: 1rem;
-}
-
-.dsb{
-  opacity: 0.1;
-  cursor: none;
-  pointer-events: none;
-}
-.btns{
-  display: flex;
-  max-width: 20rem;
-  justify-content: space-between;
-}
-.plus,.minus{
-width: 70px;
-height: 70px;
-background-color: rgb(0, 0, 0);
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-color: white;
-}
-
-.points{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.points > span {
-  text-align: center;
-}
-
-.selected {
-  background-color: seagreen;
 }

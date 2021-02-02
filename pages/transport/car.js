@@ -23,28 +23,28 @@ export default function Car() {
     }, [num])
 
     return (
-        <div>
+        <div className="container">
             { !carType && <div className="div">
                 <h1>What type of car is it?</h1>
-                <div className="box">
+                <div className="transport">
                     <div className={`circle ${carType === "petrol" ? "selected" : null}`} onClick={() => setCarType("petrol")}>
-                        Petrol
+                        <p>Petrol</p>
                     </div>
 
                     <div className={`circle ${carType === "diesel" ? "selected" : null}`} onClick={() => setCarType("diesel")}>
-                        Diesel
+                        <p>Diesel</p>
                     </div>
 
                     <div className={`circle ${carType === "hybrid" ? "selected" : null}`} onClick={() => setCarType("hybrid")}>
-                        Hybrid
+                        <p> Hybrid</p>
                     </div>
 
                     <div className={`circle ${carType === "plug" ? "selected" : null}`} onClick={() => setCarType("plug")}>
-                        Plug-in hybrid
+                        <p>Plug-in hybrid</p>
                     </div>
 
                     <div className={`circle ${carType === "elec" ? "selected" : null}`} onClick={() => setCarType("elec")}>
-                        Electric
+                        <p> Electric</p>
                     </div>
                 </div>
             </div>

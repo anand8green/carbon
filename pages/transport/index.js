@@ -12,32 +12,49 @@ export default function Transport() {
         <div className="container">
             <h1>Which of these do you normally use?</h1>
 
-            <div className="box">
+            <div className="transport">
+
                 <Link href="/transport/car">
                     <div className={`circle ${carDsb && "dsb"}`} onClick={() => dispatch({ type: "mkCarDsb" })}>
-                        Car
-                </div>
+                        <img src="./transport/car.svg" alt="" />
+                        <p>Car</p>
+                    </div>
                 </Link>
 
-                <div className="circle">
-                    Motorbike
-                </div>
+                <Link href="/transport/car">
+                    <div className={`circle ${carDsb && "dsb"}`} onClick={() => dispatch({ type: "mkCarDsb" })}>
+                        <img src="./transport/bike.svg" alt="" />
+                        <p>Motorbike</p>
+                    </div>
+                </Link>
 
-                <div className="circle">
-                    Train
-                </div>
+                <Link href="/transport/car">
+                    <div className={`circle ${carDsb && "dsb"}`} onClick={() => dispatch({ type: "mkCarDsb" })}>
+                        <img src="./transport/train.svg" alt="" />
+                        <p>Train</p>
+                    </div>
+                </Link>
 
-                <div className="circle">
-                    Tram
-                </div>
+                <Link href="/transport/car">
+                    <div className={`circle ${carDsb && "dsb"}`} onClick={() => dispatch({ type: "mkCarDsb" })}>
+                        <img src="./transport/tram.svg" alt="" />
+                        <p>Tram</p>
+                    </div>
+                </Link>
 
-                <div className="circle">
-                    Underground
-                </div>
+                <Link href="/transport/car">
+                    <div className={`circle ${carDsb && "dsb"}`} onClick={() => dispatch({ type: "mkCarDsb" })}>
+                        <img src="./transport/underground.svg" alt="" />
+                        <p>Underground</p>
+                    </div>
+                </Link>
 
-                <div className="circle">
-                    Bus
-                </div>
+                <Link href="/transport/car">
+                    <div className={`circle ${carDsb && "dsb"}`} onClick={() => dispatch({ type: "mkCarDsb" })}>
+                        <img src="./transport/bus.svg" alt="" />
+                        <p>Bus</p>
+                    </div>
+                </Link>
 
             </div>
 
