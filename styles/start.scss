@@ -1,0 +1,32 @@
+.start{
+    display: flex;
+    justify-content: space-between;
+
+    &__info{
+        min-width: 20rem;
+
+    }
+    &__pic{
+        display: flex;
+        justify-content: center;
+        flex: 1;
+
+        img{
+            min-width: 300px;
+            max-width: 400px;
+        }
+    }
+    @media (max-width: 800px){
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        &__info{
+            order: 2;
+            text-align: center;
+
+            p, h1{
+                margin: 2rem auto;
+            }
+        }
+    }
+}

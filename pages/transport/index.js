@@ -9,7 +9,7 @@ export default function Transport() {
     console.log(carDsb);
 
     return (
-        <div>
+        <div className="container">
             <h1>Which of these do you normally use?</h1>
 
             <div className="box">

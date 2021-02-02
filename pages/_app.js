@@ -1,5 +1,5 @@
 import '../styles/globals.scss'
-import '../styles/Home.css'
+import '../styles/start.scss'
 import CarbonScore from './component/CarbonScore'
 import StateData from './component/StateData'
 
