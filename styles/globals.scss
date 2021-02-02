@@ -1,17 +1,4 @@
-@font-face{
-  src: url('../assets/GothamLight.otf');
-  font-family:"Thin" ;
-
-}
-
-@font-face{
-  src: url('../assets/GothamBold.otf');
-  font-family:"Bold" ;
-}
-
-$graDark: #4c494b;
-$graLight: #948F93;
-$grn: #30AF5F;
+@import './vars.scss';
 
 html,
 body {
@@ -34,13 +21,18 @@ a {
 h1{
   color: $graDark;
   font-family: Bold;
-  font-size: 2.3rem;
+  font-size: 3rem;
+  letter-spacing: -1px;
+}
+h6{
+  font-size: 1.3rem;
+  font-family: Bold;
 }
 p{
   line-height: 1.9;
   color: $graLight;
   max-width: 30rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 button{
@@ -53,8 +45,22 @@ border-style: none;
 width: 20rem;
 margin: 3rem 0;
 font-family: Thin
+}
+
+.score{
+width: 15rem;
+
+display: flex;
+h6{
+margin-left: 1rem;
+}
+img{
+  width: 8%;
+  object-fit: contain;
 
 }
+}
+
 .box{
   display: flex;
   flex-wrap: wrap;
@@ -92,9 +98,6 @@ justify-content: center;
 color: white;
 }
 
-h6{
-  font-size: 1rem;
-}
 .points{
   display: flex;
   flex-direction: column;
