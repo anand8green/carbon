@@ -6,7 +6,8 @@ body {
   margin: 0;
   font-family: Thin,
 }
-body{
+
+body {
   background-color: #fafafa
 }
 
@@ -18,54 +19,60 @@ a {
 * {
   box-sizing: border-box;
 }
-h1{
+
+h1 {
   color: $graDark;
   font-family: Bold;
   font-size: 3rem;
   letter-spacing: -1px;
 }
-h6{
+
+h6 {
   font-size: 1.3rem;
   font-family: Bold;
 }
-p{
+
+p {
   line-height: 1.9;
   color: $graLight;
   max-width: 30rem;
   font-size: 1.5rem;
 }
 
-button{
-  background-color:$grn;
+button {
+  background-color: $grn;
   padding: 1.3rem;
   font-size: 1.3rem;
   border-radius: 0.6rem;
   color: white;
-border-style: none;
-width: 100%;
-max-width: 20rem;
-margin: 3rem 0;
-font-family: Thin;
-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.349);
-transition: all 0.3s ease;
+  border-style: none;
+  width: 100%;
+  max-width: 20rem;
+  margin: 3rem 0;
+  font-family: Thin;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.349);
+  transition: all 0.3s ease;
+  cursor: pointer;
 
-&:hover{
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.171);
-  transform: translateY(-5px);
-}
-
-}
-
-.score{
-width: 15rem;
-
-display: flex;
-h6{
-margin-left: 1rem;
-}
-img{
-  width: 8%;
-  object-fit: contain;
+  &:hover {
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.171);
+    transform: translateY(-5px);
+  }
 
 }
+
+.score {
+  width: 15rem;
+
+  display: flex;
+
+  h6 {
+    margin-left: 1rem;
+  }
+
+  img {
+    width: 8%;
+    object-fit: contain;
+
+  }
 }
