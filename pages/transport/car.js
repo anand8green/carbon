@@ -1,0 +1,81 @@
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import { globalState } from '../component/StateData'
+
+export default function Car() {
+
+    const [carType, setCarType] = useState(null)
+    const [value, setValue] = useState(0)
+    const [num, setNum] = useState(0)
+
+    const [, dispatch] = globalState()
+
+    useEffect(() => {
+        if (carType === "petrol") setValue(0.5)
+        if (carType === "diesel") setValue(0.4)
+        if (carType === "hybrid") setValue(0.3)
+        if (carType === "plug") setValue(0.3)
+        if (carType === "elec") setValue(0.2)
+    }, [carType])
+
+    useEffect(() => {
+        dispatch({ type: "carValue", value: value })
+    }, [num])
+
+    return (
+        <div>
+            { !carType && <div className="div">
+                <h1>What type of car is it?</h1>
+                <div className="box">
+                    <div className={`circle ${carType === "petrol" ? "selected" : null}`} onClick={() => setCarType("petrol")}>
+                        Petrol
+                    </div>
+
+                    <div className={`circle ${carType === "diesel" ? "selected" : null}`} onClick={() => setCarType("diesel")}>
+                        Diesel
+                    </div>
+
+                    <div className={`circle ${carType === "hybrid" ? "selected" : null}`} onClick={() => setCarType("hybrid")}>
+                        Hybrid
+                    </div>
+
+                    <div className={`circle ${carType === "plug" ? "selected" : null}`} onClick={() => setCarType("plug")}>
+                        Plug-in hybrid
+                    </div>
+
+                    <div className={`circle ${carType === "elec" ? "selected" : null}`} onClick={() => setCarType("elec")}>
+                        Electric
+                    </div>
+                </div>
+            </div>
+
+            }
+
+            {
+                carType && <div>
+                    <h1>How much do you drive?</h1>
+                    <div className="btns">
+                        <div className="plus" onClick={() => {
+                            setNum(num + 1)
+                        }}>
+                            <h2>+</h2>
+                        </div>
+
+                        <div className="points">
+                            <h2>{num}</h2>
+                            <span> hours per week</span>
+
+                        </div>
+                        <div className="minus">
+                            <h2>-</h2>
+                        </div>
+                    </div>
+                </div>
+            }
+
+            <Link href="/transport">
+                <button>Next</button>
+            </Link>
+        </div>
+    )
+}

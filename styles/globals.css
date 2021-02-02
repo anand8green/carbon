@@ -1,6 +1,6 @@
 html,
 body {
-  padding: 0;
+  padding: 1rem;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -13,4 +13,75 @@ a {
 
 * {
   box-sizing: border-box;
+}
+h1{
+  color: seagreen;
+}
+p{
+  line-height: 1.8;
+  color: #333;
+  max-width: 30rem;
+}
+
+button{
+  background-color:seagreen;
+  padding: 1rem;
+  font-size: 1.3rem;
+  border-radius: 1rem;
+  color: white;
+border-style: none;
+width: 20rem;
+margin: 3rem 0;
+}
+.box{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 30rem;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: darkgray;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+justify-content: center;
+margin: 1rem;
+}
+
+.dsb{
+  opacity: 0.1;
+  cursor: none;
+  pointer-events: none;
+}
+.btns{
+  display: flex;
+  max-width: 20rem;
+  justify-content: space-between;
+}
+.plus,.minus{
+width: 70px;
+height: 70px;
+background-color: rgb(0, 0, 0);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+}
+
+h6{
+  font-size: 1rem;
+}
+.points{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.points > span {
+  text-align: center;
+}
+
+.selected {
+  background-color: seagreen;
 }
