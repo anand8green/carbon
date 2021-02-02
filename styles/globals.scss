@@ -1,9 +1,26 @@
+@font-face{
+  src: url('../assets/GothamLight.otf');
+  font-family:"Thin" ;
+
+}
+
+@font-face{
+  src: url('../assets/GothamBold.otf');
+  font-family:"Bold" ;
+}
+
+$graDark: #4c494b;
+$graLight: #948F93;
+$grn: #30AF5F;
+
 html,
 body {
   padding: 1rem;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Thin,
+}
+body{
+  background-color: #fafafa
 }
 
 a {
@@ -15,16 +32,19 @@ a {
   box-sizing: border-box;
 }
 h1{
-  color: seagreen;
+  color: $graDark;
+  font-family: Bold;
+  font-size: 2.3rem;
 }
 p{
-  line-height: 1.8;
-  color: #333;
+  line-height: 1.9;
+  color: $graLight;
   max-width: 30rem;
+  font-size: 1.2rem;
 }
 
 button{
-  background-color:seagreen;
+  background-color:$grn;
   padding: 1rem;
   font-size: 1.3rem;
   border-radius: 1rem;
@@ -32,6 +52,8 @@ button{
 border-style: none;
 width: 20rem;
 margin: 3rem 0;
+font-family: Thin
+
 }
 .box{
   display: flex;

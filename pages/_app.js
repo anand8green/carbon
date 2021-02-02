@@ -1,4 +1,4 @@
-import '../styles/globals.css'
+import '../styles/globals.scss'
 import '../styles/Home.css'
 import CarbonScore from './component/CarbonScore'
 import StateData from './component/StateData'
