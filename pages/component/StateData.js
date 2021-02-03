@@ -4,14 +4,23 @@ const Data = createContext()
 
 const initState = {
     score: 0,
-    carDsb: false
+    transport: {
+        carDsb: false
+    }
+
 }
 
 const reducer = (state, action) => {
 
     switch (action.type) {
 
-        case "mkCarDsb": return { ...state, carDsb: true }
+        case "carDsb": return { ...state, transport: { ...state.transport, carDsb: true } }
+        case "bikeDsb": return { ...state, transport: { ...state.transport, bikeDsb: true } }
+        case "trainDsb": return { ...state, transport: { ...state.transport, trainDsb: true } }
+        case "tramDsb": return { ...state, transport: { ...state.transport, tramDsb: true } }
+        case "undergroundDsb": return { ...state, transport: { ...state.transport, undergroundDsb: true } }
+        case "busDsb": return { ...state, transport: { ...state.transport, busDsb: true } }
+
         case "carValue":
 
             const val = state.score + action.value
