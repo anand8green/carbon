@@ -3,7 +3,7 @@
 html,
 body {
   margin: 0;
-  padding: 0;
+  padding: 1rem;
   font-family: Thin,
 }
 
@@ -25,11 +25,6 @@ h1 {
   font-family: Bold;
   font-size: 3rem;
   letter-spacing: -1px;
-}
-
-h6 {
-  font-size: 1.3rem;
-  font-family: Bold;
 }
 
 p {
@@ -61,15 +56,21 @@ button {
 }
 
 .score {
-  width: 15rem;
+  width: 20rem;
   display: flex;
+  height: 3rem;
 
-  h6 {
+  span {
+    color: $graDark;
+    font-size: 1.3rem;
+    font-family: Bold;
+    display: flex;
+    align-items: center;
     margin-left: 1rem;
   }
 
   img {
-    width: 8%;
+    width: 15%;
     object-fit: contain;
 
   }

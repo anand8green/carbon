@@ -6,8 +6,8 @@ export default function CarbonScore() {
     return (
         <div className="container">
             <div className="score">
-                <img src="/footprint.png" alt="" />
-                <h6>{score} tonnes</h6>
+                <img src="/footPrint.svg" alt="" />
+                <span>{score} tonnes</span>
             </div>
         </div>
     )
