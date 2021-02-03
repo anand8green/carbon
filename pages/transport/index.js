@@ -39,21 +39,21 @@ export default function Transport() {
                     </div>
                 </Link>
 
-                <Link href="/transport/car">
+                <Link href="/transport/tram">
                     <div className={`circle ${tramDsb && "dsb"}`} onClick={() => dispatch({ type: "tramDsb" })}>
                         <img src="./transport/tram.svg" alt="" />
                         <p>Tram</p>
                     </div>
                 </Link>
 
-                <Link href="/transport/car">
+                <Link href="/transport/underground">
                     <div className={`circle ${undergroundDsb && "dsb"}`} onClick={() => dispatch({ type: "undergroundDsb" })}>
                         <img src="./transport/underground.svg" alt="" />
                         <p>Underground</p>
                     </div>
                 </Link>
 
-                <Link href="/transport/car">
+                <Link href="/transport/bus">
                     <div className={`circle ${busDsb && "dsb"}`} onClick={() => dispatch({ type: "busDsb" })}>
                         <img src="./transport/bus.svg" alt="" />
                         <p>Bus</p>
@@ -63,7 +63,7 @@ export default function Transport() {
             </div>
 
             <Link href="/flight">
-                <button>I don't use any of them</button>
+                <button>Next</button>
             </Link>
 
         </motion.div>

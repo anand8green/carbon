@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { globalState } from '../component/StateData'
 
-export default function Train() {
+export default function Tram() {
 
     const [, dispatch] = globalState()
     const [num, setNum] = useState(0)
@@ -15,13 +15,13 @@ export default function Train() {
             transition={{ duration: 0.5, type: 'spring', stiffness: 100 }}
         >
             <div className="btnBox">
-                <h1>How much do you travel by train?</h1>
-                <img src="/transport/train.svg" alt="" />
+                <h1>How much do you travel by tram?</h1>
+                <img src="/transport/tram.svg" alt="" />
 
                 <div className="btns">
                     <div className="plus" onClick={() => {
                         setNum(num + 1)
-                        dispatch({ type: "addScore", value: 0.2 })
+                        dispatch({ type: "addScore", value: 0.1 })
                     }}>
                         <h2>+</h2>
                     </div>
@@ -32,7 +32,7 @@ export default function Train() {
                     <div className="minus" onClick={() => {
                         if (num >= 1) {
                             setNum(num - 1)
-                            dispatch({ type: "removeScore", value: 0.2 })
+                            dispatch({ type: "removeScore", value: 0.1 })
                         }
                     }}>
                         <h2>-</h2>
