@@ -1,12 +1,16 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { globalState } from '../component/StateData'
 
-export default function Train() {
+export default function Bike() {
 
     const [, dispatch] = globalState()
     const [num, setNum] = useState(0)
+
+    useEffect(() => {
+        num ? dispatch({ type: "addScore", value: 0.3 }) : null
+    }, [num])
 
     return (
         <motion.div className="container"
@@ -15,19 +19,19 @@ export default function Train() {
             transition={{ duration: 0.5, type: 'spring', stiffness: 100 }}
         >
             <div className="btnBox">
-                <h1>HHow much do you travel by train?</h1>
-                <img src="/transport/train.svg" alt="" />
-
+                <h1>How much do you ride motorbike?</h1>
+                <img src="/transport/bike.svg" alt="" />
                 <div className="btns">
                     <div className="plus" onClick={() => {
                         setNum(num + 1)
-                        dispatch({ type: "addScore", value: 0.2 })
                     }}>
                         <h2>+</h2>
                     </div>
+
                     <div className="points">
                         <h1>{num}</h1>
                         <span> hours per week</span>
+
                     </div>
                     <div className="minus" onClick={() => {
                         if (num >= 1) {
@@ -38,7 +42,6 @@ export default function Train() {
                         <h2>-</h2>
                     </div>
                 </div>
-
             </div>
 
             <Link href="/transport">

@@ -21,10 +21,13 @@ const reducer = (state, action) => {
         case "undergroundDsb": return { ...state, transport: { ...state.transport, undergroundDsb: true } }
         case "busDsb": return { ...state, transport: { ...state.transport, busDsb: true } }
 
-        case "carValue":
-
+        case "addScore":
             const val = state.score + action.value
             return { ...state, score: Number(val.toFixed(2)) }
+
+        case "removeScore":
+            const valRemove = state.score - action.value
+            return { ...state, score: Number(valRemove.toFixed(2)) }
     }
 }
 

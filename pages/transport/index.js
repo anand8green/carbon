@@ -25,14 +25,14 @@ export default function Transport() {
                     </div>
                 </Link>
 
-                <Link href="/transport/car">
+                <Link href="/transport/bike">
                     <div className={`circle ${bikeDsb && "dsb"}`} onClick={() => dispatch({ type: "bikeDsb" })}>
                         <img src="./transport/bike.svg" alt="" />
                         <p>Motorbike</p>
                     </div>
                 </Link>
 
-                <Link href="/transport/car">
+                <Link href="/transport/train">
                     <div className={`circle ${trainDsb && "dsb"}`} onClick={() => dispatch({ type: "trainDsb" })}>
                         <img src="./transport/train.svg" alt="" />
                         <p>Train</p>

@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { globalState } from '../component/StateData'
@@ -18,64 +19,78 @@ export default function Car() {
         if (carType === "elec") setValue(0.2)
     }, [carType])
 
-    useEffect(() => {
-        dispatch({ type: "carValue", value: value })
-    }, [num])
-
     return (
         <div className="container">
-            { !carType && <div className="div">
-                <h1>What type of car is it?</h1>
-                <div className="transport">
-                    <div className={`circle ${carType === "petrol" ? "selected" : null}`} onClick={() => setCarType("petrol")}>
-                        <img src="/transport/petrol.svg" alt="" />
-                        <p>Petrol</p>
-                    </div>
+            { !carType &&
 
-                    <div className={`circle ${carType === "diesel" ? "selected" : null}`} onClick={() => setCarType("diesel")}>
-                        <img src="/transport/diesel.svg" alt="" />
-                        <p>Diesel</p>
-                    </div>
+                <motion.div className="div"
+                    initial={{ x: 400 }}
+                    animate={{ x: 0 }}
+                    transition={{ duration: 0.5, type: 'spring', stiffness: 100 }}
+                >
+                    <h1>What type of car is it?</h1>
+                    <div className="transport">
+                        <div className={`circle ${carType === "petrol" ? "selected" : null}`} onClick={() => setCarType("petrol")}>
+                            <img src="/transport/petrol.svg" alt="" />
+                            <p>Petrol</p>
+                        </div>
 
-                    <div className={`circle ${carType === "hybrid" ? "selected" : null}`} onClick={() => setCarType("hybrid")}>
-                        <img src="/transport/hybrid.svg" alt="" />
-                        <p> Hybrid</p>
-                    </div>
+                        <div className={`circle ${carType === "diesel" ? "selected" : null}`} onClick={() => setCarType("diesel")}>
+                            <img src="/transport/diesel.svg" alt="" />
+                            <p>Diesel</p>
+                        </div>
 
-                    <div className={`circle ${carType === "plug" ? "selected" : null}`} onClick={() => setCarType("plug")}>
-                        <img src="/transport/plug.svg" alt="" />
-                        <p>Plug-in hybrid</p>
-                    </div>
+                        <div className={`circle ${carType === "hybrid" ? "selected" : null}`} onClick={() => setCarType("hybrid")}>
+                            <img src="/transport/hybrid.svg" alt="" />
+                            <p> Hybrid</p>
+                        </div>
 
-                    <div className={`circle ${carType === "elec" ? "selected" : null}`} onClick={() => setCarType("elec")}>
-                        <img src="/transport/electric.svg" alt="" />
-                        <p> Electric</p>
+                        <div className={`circle ${carType === "plug" ? "selected" : null}`} onClick={() => setCarType("plug")}>
+                            <img src="/transport/plug.svg" alt="" />
+                            <p>Plug-in hybrid</p>
+                        </div>
+
+                        <div className={`circle ${carType === "elec" ? "selected" : null}`} onClick={() => setCarType("elec")}>
+                            <img src="/transport/electric.svg" alt="" />
+                            <p> Electric</p>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </motion.div>
 
             }
-
             {
-                carType && <div>
+                carType &&
+
+                <motion.div className="btnBox"
+                    initial={{ x: 400 }}
+                    animate={{ x: 0 }}
+                    transition={{ duration: 0.5, type: 'spring', stiffness: 100 }}
+                >
                     <h1>How much do you drive?</h1>
+                    <img src="/transport/car.svg" alt="" />
+
                     <div className="btns">
                         <div className="plus" onClick={() => {
                             setNum(num + 1)
+                            dispatch({ type: "addScore", value: value })
                         }}>
                             <h2>+</h2>
                         </div>
-
                         <div className="points">
                             <h1>{num}</h1>
                             <span> hours per week</span>
-
                         </div>
-                        <div className="minus">
+                        <div className="minus" onClick={() => {
+                            if (num >= 1) {
+                                setNum(num - 1)
+                                dispatch({ type: "removeScore", value: value })
+                            }
+                        }}>
                             <h2>-</h2>
                         </div>
                     </div>
-                </div>
+
+                </motion.div>
             }
 
             <Link href="/transport">

@@ -4,7 +4,8 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 50rem;
-  margin-top: 3rem;
+  margin: 3rem 0;
+
 }
 
 .circle {
@@ -14,29 +15,30 @@
   align-items: center;
   justify-content: center;
   margin-right: 4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
   flex-direction: column;
-  padding: 1rem;
+  padding: 1.6rem;
   transform: scale(1);
-  transition: all 0.2s ease;
+  transition: all 0.5s ease;
   border-radius: 50%;
   cursor: pointer;
+  //background-color: red;
 
   img {
     display: block;
     object-fit: scale-down;
     height: 120px;
-    padding: 1rem;
+    padding: 1.5rem;
 
   }
 
   p {
-    margin: 1rem 0;
-    padding: 0;
+    margin: 0;
+    font-size: 1rem;
   }
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     background-color: rgb(238, 238, 238);
 
   }
@@ -48,10 +50,27 @@
   pointer-events: none;
 }
 
+//////  *** SECOND PART START HERE
+
+.btnBox {
+
+  h1 {
+    // max-width: 50rem;
+  }
+
+  img {
+    width: 20rem;
+    height: 8rem;
+    object-fit: contain;
+    margin: 3rem 0;
+  }
+}
+
 .btns {
   display: flex;
   max-width: 20rem;
-  margin: 5rem 0;
+  margin-top: 2rem;
+  margin-bottom: 7rem;
   justify-content: space-between;
 
   h2 {
@@ -88,6 +107,7 @@
 
   h1 {
     margin: 0;
+
   }
 
 }
