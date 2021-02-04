@@ -74,7 +74,7 @@ export default function Food() {
 
             </div>
 
-            <Link href="/flight">
+            <Link href="/purchase/clothes">
                 <button>Next</button>
             </Link>
 
