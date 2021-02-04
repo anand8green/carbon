@@ -1,0 +1,131 @@
+@import './vars.scss';
+
+.food {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 70rem;
+  margin: 3rem 0;
+
+  .circle {
+    //    background-color: rgb(205, 205, 205);
+    padding: 0;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+
+    img {
+      padding: 1.8rem;
+      height: 10rem;
+      width: 15rem;
+    }
+  }
+}
+
+//////  *** SECOND PART START HERE
+
+// .btnBox {
+//   h1 {
+//     // max-width: 50rem;
+//   }
+
+//   img {
+//     width: 20rem;
+//     height: 8rem;
+//     object-fit: contain;
+//     margin: 3rem 0;
+//   }
+// }
+
+// .circle {
+//   width: 200px;
+//   height: 200px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin-right: 4rem;
+//   margin-bottom: 0rem;
+//   flex-direction: column;
+//   padding: 1.6rem;
+//   transform: scale(1);
+//   transition: all 0.5s ease;
+//   border-radius: 50%;
+//   cursor: pointer;
+
+//   //background-color: red;
+
+//   img {
+//     display: block;
+//     object-fit: scale-down;
+//     height: 120px;
+//     padding: 1.5rem;
+
+//   }
+
+//   p {
+//     margin: 0;
+//     font-size: 1rem;
+//   }
+
+//   &:hover {
+//     transform: scale(1.1);
+//     background-color: rgb(238, 238, 238);
+
+//   }
+// }
+
+// .dsb {
+//   opacity: 0.1;
+//   cursor: none;
+//   pointer-events: none;
+// }
+
+// .btns {
+//   display: flex;
+//   max-width: 20rem;
+//   margin-top: 2rem;
+//   margin-bottom: 7rem;
+//   justify-content: space-between;
+
+//   h2 {
+//     font-size: 2rem;
+//   }
+// }
+
+// .plus,
+// .minus {
+//   width: 70px;
+//   height: 70px;
+//   background-color: $graDark;
+//   border-radius: 50%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   color: white;
+//   cursor: pointer;
+//   transition: all 0.2s ease;
+//   user-select: none;
+
+//   &:hover {
+//     background-color: black;
+//     transform: scale(1.1);
+//   }
+// }
+
+// .points {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding: 0.3rem;
+
+//   h1 {
+//     margin: 0;
+//   }
+// }
+
+// .points>span {
+//   text-align: center;
+// }
+
+// .selected {
+//   background-color: seagreen;
+// }

@@ -130,7 +130,7 @@ export default function Flight() {
 
             </div>
 
-            <Link href="/transport">
+            <Link href="/food">
                 <button>Next</button>
             </Link>
         </motion.div>
