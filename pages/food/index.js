@@ -25,47 +25,47 @@ export default function Food() {
                     </div>
                 </Link>
 
-                <Link href="/transport/bike">
+                <Link href="/food/pork">
                     <div className={`circle ${bikeDsb && "dsb"}`} onClick={() => dispatch({ type: "bikeDsb" })}>
                         <img src="/food/pork.svg" alt="" />
                         <p>Pork</p>
                     </div>
                 </Link>
 
-                <Link href="/transport/train">
+                <Link href="/food/chicken">
                     <div className={`circle ${trainDsb && "dsb"}`} onClick={() => dispatch({ type: "trainDsb" })}>
                         <img src="/food/chicken.svg" alt="" />
                         <p>Chicken</p>
                     </div>
                 </Link>
 
-                <Link href="/transport/tram">
+                <Link href="/food/lamb">
                     <div className={`circle ${tramDsb && "dsb"}`} onClick={() => dispatch({ type: "tramDsb" })}>
                         <img src="/food/lamb.svg" alt="" />
                         <p>Lamb</p>
                     </div>
                 </Link>
 
-                <Link href="/transport/underground">
+                <Link href="/food/fish">
                     <div className={`circle ${undergroundDsb && "dsb"}`} onClick={() => dispatch({ type: "undergroundDsb" })}>
                         <img src="/food/fish.svg" alt="" />
                         <p>Fish</p>
                     </div>
                 </Link>
 
-                <Link href="/transport/bus">
+                <Link href="/food/shellfish">
                     <div className={`circle ${busDsb && "dsb"}`} onClick={() => dispatch({ type: "busDsb" })}>
                         <img src="/food/shellfish.svg" alt="" />
                         <p>Shellfish</p>
                     </div>
                 </Link>
-                <Link href="/transport/bus">
+                <Link href="/food/dairy">
                     <div className={`circle ${busDsb && "dsb"}`} onClick={() => dispatch({ type: "busDsb" })}>
                         <img src="/food/dairy.svg" alt="" />
                         <p>Dairy</p>
                     </div>
                 </Link>
-                <Link href="/transport/bus">
+                <Link href="/food/eggs">
                     <div className={`circle ${busDsb && "dsb"}`} onClick={() => dispatch({ type: "busDsb" })}>
                         <img src="/food/eggs.svg" alt="" />
                         <p>Eggs</p>

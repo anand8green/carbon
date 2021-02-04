@@ -3,12 +3,12 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { globalState } from '../component/StateData'
 
-export default function Beef() {
+export default function Chicken() {
 
     const [, dispatch] = globalState()
     const [num, setNum] = useState(0)
 
-    const foodCarbon = 0.4
+    const foodCarbon = 0.1
 
     return (
         <motion.div className="container"
@@ -17,8 +17,8 @@ export default function Beef() {
             transition={{ duration: 0.5, type: 'spring', stiffness: 100 }}
         >
             <div className="btnBox">
-                <h1>How often do you eat beef?</h1>
-                <img src="/food/beef.svg" alt="" />
+                <h1>How often do you eat chicken?</h1>
+                <img src="/food/chicken.svg" alt="" />
 
                 <div className="btns">
                     <div className="plus" onClick={() => {
