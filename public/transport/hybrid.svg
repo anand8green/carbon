@@ -3,27 +3,25 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 158.7 282.6" style="enable-background:new 0 0 158.7 282.6;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#CDD8DB;}
-	.st1{fill:#B3C1C4;}
-	.st2{fill:#CED8DC;}
-	.st3{fill:#94ABB3;}
-	.st4{fill:#EBEFF1;}
-	.st5{fill:none;stroke:#FCFCFC;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st0{fill:#94ABB3;}
+	.st1{fill:#CED8DC;}
+	.st2{fill:#EBEFF1;}
+	.st3{fill:none;stroke:#FCFCFC;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
 <g id="Layer_2_1_">
 	<g id="Layer_1-2">
 		<path class="st0" d="M79.3,158.4C35.5,158.4,0,153.8,0,148v124.2c0,5.7,35.5,10.4,79.3,10.4s79.3-4.7,79.3-10.4V148
 			C158.7,153.8,123.2,158.4,79.3,158.4z"/>
-		<path class="st1" d="M0,13.4V148c0,5.8,35.5,10.4,79.3,10.4s79.3-4.7,79.3-10.4V13.4H0z"/>
-		<ellipse class="st2" cx="79.3" cy="13.4" rx="79.3" ry="10.4"/>
-		<path class="st3" d="M79.3,0C57.4,0,39.7,2.3,39.7,5.2v7.4c0,2.9,17.8,5.2,39.7,5.2s39.7-2.3,39.7-5.2V5.2C119,2.3,101.2,0,79.3,0
+		<path class="st0" d="M0,13.4V148c0,5.8,35.5,10.4,79.3,10.4s79.3-4.7,79.3-10.4V13.4H0z"/>
+		<ellipse class="st1" cx="79.3" cy="13.4" rx="79.3" ry="10.4"/>
+		<path class="st0" d="M79.3,0C57.4,0,39.7,2.3,39.7,5.2v7.4c0,2.9,17.8,5.2,39.7,5.2s39.7-2.3,39.7-5.2V5.2C119,2.3,101.2,0,79.3,0
 			z"/>
-		<polygon class="st4" points="102.7,78.3 86.9,78.3 86.9,62.5 71.8,62.5 71.8,78.3 56,78.3 56,93.5 71.8,93.5 71.8,109.3 
+		<polygon class="st2" points="102.7,78.3 86.9,78.3 86.9,62.5 71.8,62.5 71.8,78.3 56,78.3 56,93.5 71.8,93.5 71.8,109.3 
 			86.9,109.3 86.9,93.5 102.7,93.5 		"/>
-		<rect x="56" y="218.2" class="st4" width="46.8" height="15.2"/>
+		<rect x="56" y="218.2" class="st2" width="46.8" height="15.2"/>
 		<g>
-			<path class="st5" d="M85.5,184.9c0,0-17-3-25.5-12.1c-12.1-12.8-14.3-39.5,14.5-44.1c33.8-5.3,30.2,39.1,30.2,39.1l-15.5-11.6"/>
-			<line class="st5" x1="115.3" y1="151.5" x2="104.7" y2="167.9"/>
+			<path class="st3" d="M85.5,184.9c0,0-17-3-25.5-12.1c-12.1-12.8-14.3-39.5,14.5-44.1c33.8-5.3,30.2,39.1,30.2,39.1l-15.5-11.6"/>
+			<line class="st3" x1="115.3" y1="151.5" x2="104.7" y2="167.9"/>
 		</g>
 	</g>
 </g>
