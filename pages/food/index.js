@@ -4,7 +4,7 @@ import { globalState } from '../component/StateData'
 import { motion } from 'framer-motion'
 export default function Food() {
 
-    const [{ transport: { beefDsb, porkDsb, chickenDsb, lambDsb, fishDsb, shellfishDsb, dairyDsb, eggsDsb } }, dispatch] = globalState()
+    const [{ food: { beefDsb, porkDsb, chickenDsb, lambDsb, fishDsb, shellfishDsb, dairyDsb, eggsDsb } }, dispatch] = globalState()
 
     return (
         <motion.div className="container"
