@@ -27,6 +27,8 @@ h1 {
   letter-spacing: -1px;
 }
 
+// only on result page
+
 p {
   line-height: 1.9;
   color: $graLight;
@@ -67,7 +69,7 @@ button {
   justify-content: space-between;
   align-items: center;
   padding: 0;
-  margin: 6rem 0;
+  margin: 4rem 0;
 
   .btns {
     //   background-color: green;

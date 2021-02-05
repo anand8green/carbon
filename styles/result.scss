@@ -1,0 +1,36 @@
+@import './vars.scss';
+
+.result {
+
+    h5 {
+        font-size: 2rem;
+        margin: 0;
+        margin-bottom: 1rem;
+        color: $graDark;
+    }
+
+    h1 {
+        color: $graDark;
+        font-size: 5rem;
+        margin: 2rem 0;
+    }
+
+    .resultBtn {
+        width: 25rem;
+        max-width: 25rem;
+        padding: 1.7rem;
+        font-size: 1.6rem;
+        margin: 0;
+        margin: 4rem 0 1rem 0
+    }
+
+    .moneyinfo {
+        font-size: 1rem;
+        color: $graDark;
+    }
+
+}
+
+h6 {
+    font-size: 5rem;
+}

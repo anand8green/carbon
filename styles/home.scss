@@ -1,0 +1,25 @@
+@import './vars.scss';
+
+.btnBoxHome {
+    //  background-color: red;
+    margin: 1rem 0;
+}
+
+.home {
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .plus {
+        flex: 1;
+        border-radius: 1rem;
+        margin-right: 1rem;
+        background-color: $grn;
+    }
+
+    .minus {
+        flex: 1;
+        border-radius: 1rem;
+    }
+}
