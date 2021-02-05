@@ -39,7 +39,7 @@ export default function Fish() {
                         <h2>-</h2>
                     </div>
                 </div>
-                <img src="/food/fish.svg" alt="" />
+                <img src="/food/fishPlate.svg" alt="" />
 
             </div>
 

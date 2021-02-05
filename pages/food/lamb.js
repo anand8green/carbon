@@ -39,7 +39,7 @@ export default function Lamb() {
                         <h2>-</h2>
                     </div>
                 </div>
-                <img src="/food/lamb.svg" alt="" />
+                <img src="/food/lambPlate.svg" alt="" />
 
             </div>
 

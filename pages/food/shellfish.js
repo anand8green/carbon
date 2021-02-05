@@ -39,7 +39,7 @@ export default function Shellfish() {
                         <h2>-</h2>
                     </div>
                 </div>
-                <img src="/food/shellfish.svg" alt="" />
+                <img src="/food/seafoodPlate.svg" alt="" />
 
             </div>
 

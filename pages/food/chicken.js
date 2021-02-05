@@ -39,7 +39,7 @@ export default function Chicken() {
                         <h2>-</h2>
                     </div>
                 </div>
-                <img src="/food/chicken.svg" alt="" />
+                <img src="/food/nuggets.svg" alt="" />
 
             </div>
 

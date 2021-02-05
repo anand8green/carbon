@@ -39,7 +39,7 @@ export default function Beef() {
                         <h2>-</h2>
                     </div>
                 </div>
-                <img src="/food/beef.svg" alt="" />
+                <img src="/food/burger.svg" alt="" />
 
             </div>
 

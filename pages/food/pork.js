@@ -39,7 +39,7 @@ export default function Pork() {
                         <h2>-</h2>
                     </div>
                 </div>
-                <img src="/food/pork.svg" alt="" />
+                <img src="/food/hotdog.svg" alt="" />
 
             </div>
 
