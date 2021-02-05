@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { globalState } from '../component/StateData'
 
-export default function Clothes() {
+export default function Electronics() {
 
     const [, dispatch] = globalState()
     const [num, setNum] = useState(0)
@@ -16,23 +16,23 @@ export default function Clothes() {
             animate={{ x: 0 }}
             transition={{ duration: 0.5, type: 'spring', stiffness: 100 }}
         >
-            <h1>How much do you spend on clothes and shoes each month?</h1>
+            <h1>What about furniture and appliances for your home?</h1>
             <div className="btnBox">
 
                 <div className="btns">
                     <div className="plus" onClick={() => {
-                        setNum(num + 5)
+                        setNum(num + 50)
                         dispatch({ type: "addScore", value: purchaseCarbon })
                     }}>
                         <h2>+</h2>
                     </div>
                     <div className="points">
                         <h1>£{num}</h1>
-                        <span> per month</span>
+                        <span> in the past 12 months</span>
                     </div>
                     <div className="minus" onClick={() => {
                         if (num >= 1) {
-                            setNum(num - 5)
+                            setNum(num - 50)
                             dispatch({ type: "removeScore", value: purchaseCarbon })
                         }
                     }}>
@@ -40,11 +40,11 @@ export default function Clothes() {
                     </div>
                 </div>
 
-                <img src="/purchase/clothes.svg" alt="" />
+                <img src="/purchase/kitchen.svg" alt="" />
 
             </div>
 
-            <Link href="/purchase/beauty">
+            <Link href="/beauty">
                 <button>Next</button>
             </Link>
         </motion.div>

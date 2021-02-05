@@ -16,9 +16,8 @@ export default function Dairy() {
             animate={{ x: 0 }}
             transition={{ duration: 0.5, type: 'spring', stiffness: 100 }}
         >
+            <h1>How often do you eat dairy?</h1>
             <div className="btnBox">
-                <h1>How often do you eat dairy?</h1>
-                <img src="/food/dairy.svg" alt="" />
 
                 <div className="btns">
                     <div className="plus" onClick={() => {
@@ -40,6 +39,7 @@ export default function Dairy() {
                         <h2>-</h2>
                     </div>
                 </div>
+                <img src="/food/dairy.svg" alt="" />
 
             </div>
 

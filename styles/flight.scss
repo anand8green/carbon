@@ -1,37 +1,49 @@
 @import './vars.scss';
 
-.flight {
-    display: flex;
-    justify-content: space-between;
-    // max-width: 65rem;
-    //  background-color: red;
+.allBtns {
 
-    .pic {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        //  background-color: blue;
-        flex: 1;
-
-        img {
-            height: 80%;
-            width: 80%;
-            object-fit: contain;
-
-        }
-    }
-
-    .allBtns {
-
-        //  background-color: rgb(221, 167, 167);
-        margin-bottom: 3rem;
-
-        .btns {
-            margin: 2rem 0;
-            //    background-color: teal;
-            width: 20rem;
-            max-width: 20rem;
-
-        }
+    .btns {
+        margin-bottom: 2rem;
     }
 }
+
+.flightPic {
+
+    height: 25rem !important;
+}
+
+// .flight {
+//     display: flex;
+//     justify-content: space-between;
+//     // max-width: 65rem;
+//     //  background-color: red;
+
+//     .pic {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         //  background-color: blue;
+//         flex: 1;
+
+//         img {
+//             height: 80%;
+//             width: 80%;
+//             object-fit: contain;
+
+//         }
+//     }
+
+//     .allBtns {
+
+//         //  background-color: rgb(221, 167, 167);
+//         margin-bottom: 3rem;
+
+//         .btns {
+//             margin: 2rem 0;
+//             //    background-color: teal;
+//             width: 20rem;
+//             max-width: 20rem;
+
+//         }
+//     }
+// }

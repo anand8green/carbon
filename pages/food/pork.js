@@ -16,9 +16,8 @@ export default function Pork() {
             animate={{ x: 0 }}
             transition={{ duration: 0.5, type: 'spring', stiffness: 100 }}
         >
+            <h1>How often do you eat pork?</h1>
             <div className="btnBox">
-                <h1>How often do you eat pork?</h1>
-                <img src="/food/pork.svg" alt="" />
 
                 <div className="btns">
                     <div className="plus" onClick={() => {
@@ -40,6 +39,7 @@ export default function Pork() {
                         <h2>-</h2>
                     </div>
                 </div>
+                <img src="/food/pork.svg" alt="" />
 
             </div>
 

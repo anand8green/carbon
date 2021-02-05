@@ -18,9 +18,9 @@ export default function Bike() {
             animate={{ x: 0 }}
             transition={{ duration: 0.5, type: 'spring', stiffness: 100 }}
         >
+            <h1>How much do you ride motorbike?</h1>
             <div className="btnBox">
-                <h1>How much do you ride motorbike?</h1>
-                <img src="/transport/bike.svg" alt="" />
+
                 <div className="btns">
                     <div className="plus" onClick={() => {
                         setNum(num + 1)
@@ -42,6 +42,8 @@ export default function Bike() {
                         <h2>-</h2>
                     </div>
                 </div>
+
+                <img src="/transport/bike.svg" alt="" />
             </div>
 
             <Link href="/transport">

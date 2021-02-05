@@ -4,9 +4,7 @@ import { globalState } from '../component/StateData'
 import { motion } from 'framer-motion'
 export default function Food() {
 
-    const [{ transport: { carDsb, bikeDsb, trainDsb, tramDsb, undergroundDsb, busDsb } }, dispatch] = globalState()
-
-    console.log(carDsb);
+    const [{ transport: { beefDsb, porkDsb, chickenDsb, lambDsb, fishDsb, shellfishDsb, dairyDsb, eggsDsb } }, dispatch] = globalState()
 
     return (
         <motion.div className="container"
@@ -19,54 +17,54 @@ export default function Food() {
             <div className="food" >
 
                 <Link href="/food/beef">
-                    <div className={`circle ${carDsb && "dsb"}`} onClick={() => dispatch({ type: "carDsb" })}>
+                    <div className={`circle ${beefDsb && "dsb"}`} onClick={() => dispatch({ type: "beefDsb" })}>
                         <img src="/food/beef.svg" alt="" />
                         <p>Beef</p>
                     </div>
                 </Link>
 
                 <Link href="/food/pork">
-                    <div className={`circle ${bikeDsb && "dsb"}`} onClick={() => dispatch({ type: "bikeDsb" })}>
+                    <div className={`circle ${porkDsb && "dsb"}`} onClick={() => dispatch({ type: "porkDsb" })}>
                         <img src="/food/pork.svg" alt="" />
                         <p>Pork</p>
                     </div>
                 </Link>
 
                 <Link href="/food/chicken">
-                    <div className={`circle ${trainDsb && "dsb"}`} onClick={() => dispatch({ type: "trainDsb" })}>
+                    <div className={`circle ${chickenDsb && "dsb"}`} onClick={() => dispatch({ type: "chickenDsb" })}>
                         <img src="/food/chicken.svg" alt="" />
                         <p>Chicken</p>
                     </div>
                 </Link>
 
                 <Link href="/food/lamb">
-                    <div className={`circle ${tramDsb && "dsb"}`} onClick={() => dispatch({ type: "tramDsb" })}>
+                    <div className={`circle ${lambDsb && "dsb"}`} onClick={() => dispatch({ type: "lambDsb" })}>
                         <img src="/food/lamb.svg" alt="" />
                         <p>Lamb</p>
                     </div>
                 </Link>
 
                 <Link href="/food/fish">
-                    <div className={`circle ${undergroundDsb && "dsb"}`} onClick={() => dispatch({ type: "undergroundDsb" })}>
+                    <div className={`circle ${fishDsb && "dsb"}`} onClick={() => dispatch({ type: "fishDsb" })}>
                         <img src="/food/fish.svg" alt="" />
                         <p>Fish</p>
                     </div>
                 </Link>
 
                 <Link href="/food/shellfish">
-                    <div className={`circle ${busDsb && "dsb"}`} onClick={() => dispatch({ type: "busDsb" })}>
+                    <div className={`circle ${shellfishDsb && "dsb"}`} onClick={() => dispatch({ type: "shellfishDsb" })}>
                         <img src="/food/shellfish.svg" alt="" />
                         <p>Shellfish</p>
                     </div>
                 </Link>
                 <Link href="/food/dairy">
-                    <div className={`circle ${busDsb && "dsb"}`} onClick={() => dispatch({ type: "busDsb" })}>
+                    <div className={`circle ${dairyDsb && "dsb"}`} onClick={() => dispatch({ type: "dairyDsb" })}>
                         <img src="/food/dairy.svg" alt="" />
                         <p>Dairy</p>
                     </div>
                 </Link>
                 <Link href="/food/eggs">
-                    <div className={`circle ${busDsb && "dsb"}`} onClick={() => dispatch({ type: "busDsb" })}>
+                    <div className={`circle ${eggsDsb && "dsb"}`} onClick={() => dispatch({ type: "eggsDsb" })}>
                         <img src="/food/eggs.svg" alt="" />
                         <p>Eggs</p>
                     </div>

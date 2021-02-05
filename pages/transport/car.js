@@ -61,36 +61,38 @@ export default function Car() {
             {
                 carType &&
 
-                <motion.div className="btnBox"
-                    initial={{ x: 400 }}
-                    animate={{ x: 0 }}
-                    transition={{ duration: 0.5, type: 'spring', stiffness: 100 }}
-                >
+                <div>
                     <h1>How much do you drive?</h1>
-                    <img src="/transport/car.svg" alt="" />
+                    <motion.div className="btnBox"
+                        initial={{ x: 400 }}
+                        animate={{ x: 0 }}
+                        transition={{ duration: 0.5, type: 'spring', stiffness: 100 }}
+                    >
 
-                    <div className="btns">
-                        <div className="plus" onClick={() => {
-                            setNum(num + 1)
-                            dispatch({ type: "addScore", value: value })
-                        }}>
-                            <h2>+</h2>
+                        <div className="btns">
+                            <div className="plus" onClick={() => {
+                                setNum(num + 1)
+                                dispatch({ type: "addScore", value: value })
+                            }}>
+                                <h2>+</h2>
+                            </div>
+                            <div className="points">
+                                <h1>{num}</h1>
+                                <span> hours per week</span>
+                            </div>
+                            <div className="minus" onClick={() => {
+                                if (num >= 1) {
+                                    setNum(num - 1)
+                                    dispatch({ type: "removeScore", value: value })
+                                }
+                            }}>
+                                <h2>-</h2>
+                            </div>
                         </div>
-                        <div className="points">
-                            <h1>{num}</h1>
-                            <span> hours per week</span>
-                        </div>
-                        <div className="minus" onClick={() => {
-                            if (num >= 1) {
-                                setNum(num - 1)
-                                dispatch({ type: "removeScore", value: value })
-                            }
-                        }}>
-                            <h2>-</h2>
-                        </div>
-                    </div>
+                        <img src="/transport/car.svg" alt="" />
 
-                </motion.div>
+                    </motion.div>
+                </div>
             }
 
             <Link href="/transport">

@@ -16,9 +16,8 @@ export default function Lamb() {
             animate={{ x: 0 }}
             transition={{ duration: 0.5, type: 'spring', stiffness: 100 }}
         >
+            <h1>How often do you eat lamb?</h1>
             <div className="btnBox">
-                <h1>How often do you eat lamb?</h1>
-                <img src="/food/lamb.svg" alt="" />
 
                 <div className="btns">
                     <div className="plus" onClick={() => {
@@ -40,6 +39,7 @@ export default function Lamb() {
                         <h2>-</h2>
                     </div>
                 </div>
+                <img src="/food/lamb.svg" alt="" />
 
             </div>
 

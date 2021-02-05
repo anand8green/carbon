@@ -61,6 +61,30 @@ button {
   padding: 0;
 }
 
+.btnBox {
+  //  background-color: teal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 6rem 0;
+
+  .btns {
+    //   background-color: green;
+    flex: 1;
+    padding: 0;
+    margin: 0;
+  }
+
+  img {
+    // background-color: blue;
+    flex: 1;
+    height: 15rem;
+    object-fit: contain;
+    padding: 2rem;
+  }
+}
+
 .score {
   width: 20rem;
   display: flex;

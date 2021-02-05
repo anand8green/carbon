@@ -16,9 +16,8 @@ export default function Fish() {
             animate={{ x: 0 }}
             transition={{ duration: 0.5, type: 'spring', stiffness: 100 }}
         >
+            <h1>How often do you eat fish?</h1>
             <div className="btnBox">
-                <h1>How often do you eat fish?</h1>
-                <img src="/food/fish.svg" alt="" />
 
                 <div className="btns">
                     <div className="plus" onClick={() => {
@@ -40,6 +39,7 @@ export default function Fish() {
                         <h2>-</h2>
                     </div>
                 </div>
+                <img src="/food/fish.svg" alt="" />
 
             </div>
 

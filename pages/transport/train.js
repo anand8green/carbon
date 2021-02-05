@@ -14,9 +14,8 @@ export default function Train() {
             animate={{ x: 0 }}
             transition={{ duration: 0.5, type: 'spring', stiffness: 100 }}
         >
+            <h1>How much do you travel by train?</h1>
             <div className="btnBox">
-                <h1>How much do you travel by train?</h1>
-                <img src="/transport/train.svg" alt="" />
 
                 <div className="btns">
                     <div className="plus" onClick={() => {
@@ -38,6 +37,7 @@ export default function Train() {
                         <h2>-</h2>
                     </div>
                 </div>
+                <img src="/transport/train.svg" alt="" />
 
             </div>
 

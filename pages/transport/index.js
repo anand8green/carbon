@@ -7,6 +7,7 @@ export default function Transport() {
     const [{ transport: { carDsb, bikeDsb, trainDsb, tramDsb, undergroundDsb, busDsb } }, dispatch] = globalState()
 
     console.log(carDsb);
+    console.log(bikeDsb);
 
     return (
         <motion.div className="container"

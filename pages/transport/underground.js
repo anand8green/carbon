@@ -14,9 +14,8 @@ export default function Underground() {
             animate={{ x: 0 }}
             transition={{ duration: 0.5, type: 'spring', stiffness: 100 }}
         >
+            <h1>How much do you travel by underground?</h1>
             <div className="btnBox">
-                <h1>How much do you travel by underground?</h1>
-                <img src="/transport/underground.svg" alt="" />
 
                 <div className="btns">
                     <div className="plus" onClick={() => {
@@ -38,6 +37,8 @@ export default function Underground() {
                         <h2>-</h2>
                     </div>
                 </div>
+
+                <img src="/transport/underground.svg" alt="" />
 
             </div>
 

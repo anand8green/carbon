@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { globalState } from '../component/StateData'
 
-export default function Clothes() {
+export default function Beauty() {
 
     const [, dispatch] = globalState()
     const [num, setNum] = useState(0)
@@ -16,7 +16,7 @@ export default function Clothes() {
             animate={{ x: 0 }}
             transition={{ duration: 0.5, type: 'spring', stiffness: 100 }}
         >
-            <h1>How much do you spend on clothes and shoes each month?</h1>
+            <h1>How about toiletries and health and beauty products?</h1>
             <div className="btnBox">
 
                 <div className="btns">
@@ -40,11 +40,11 @@ export default function Clothes() {
                     </div>
                 </div>
 
-                <img src="/purchase/clothes.svg" alt="" />
+                <img src="/purchase/beauty.svg" alt="" />
 
             </div>
 
-            <Link href="/purchase/beauty">
+            <Link href="/purchase/electronics">
                 <button>Next</button>
             </Link>
         </motion.div>
