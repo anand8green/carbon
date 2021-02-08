@@ -15,20 +15,43 @@
         margin: 2rem 0;
     }
 
+    p {
+        font-size: 1.5rem !important;
+        margin: 3rem 0;
+    }
+
     .resultBtn {
         width: 25rem;
         max-width: 25rem;
         padding: 1.7rem;
         font-size: 1.6rem;
         margin: 0;
-        margin: 4rem 0 1rem 0
+        margin: 0rem;
+        //        background-color: purple;
+
     }
 
     .moneyinfo {
-        font-size: 1rem;
+        font-size: 1rem !important;
         color: $graDark;
     }
 
+}
+
+.result__pic {
+    //  background-color: purple;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    //   margin: 3rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 3rem;
+
+    }
 }
 
 h6 {

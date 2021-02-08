@@ -25,7 +25,7 @@ export default function Result() {
 
                     <p className="moneyinfo">Your money will help protect the rainforest, provide clean cookstoves, and generate green energy around the world.</p>
                 </div>
-                <div className="start__pic">
+                <div className="result__pic">
                     <img src="/result.svg" alt="" />
                 </div>
             </motion.div>
