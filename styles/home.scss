@@ -6,9 +6,10 @@
 }
 
 .home {
+    // background-color: chocolate;
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.5rem !important;
     }
 
     .plus {
@@ -16,6 +17,10 @@
         border-radius: 1rem;
         margin-right: 1rem;
         background-color: $grn;
+
+        &:hover {
+            background-color: $grn;
+        }
     }
 
     .minus {

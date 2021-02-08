@@ -28,15 +28,10 @@ export default function Underground() {
                         <h2>-</h2>
                     </div>
 
-
-
-
                     <div className="points">
                         <h1>{num}</h1>
                         <span> hours per week</span>
                     </div>
-
-
 
                     <div className="plus" onClick={() => {
                         setNum(num + 1)
@@ -44,7 +39,6 @@ export default function Underground() {
                     }}>
                         <h2>+</h2>
                     </div>
-
 
                 </div>
 

@@ -30,8 +30,6 @@ export default function Clothes() {
                         <h2>-</h2>
                     </div>
 
-
-
                     <div className="points">
                         <h1>£{num}</h1>
                         <span> per month</span>
@@ -43,10 +41,6 @@ export default function Clothes() {
                     }}>
                         <h2>+</h2>
                     </div>
-
-
-
-
 
                 </div>
 

@@ -46,13 +46,14 @@ p {
   line-height: 1.9;
   color: $graLight;
   max-width: 30rem;
-  font-size: 1.5rem;
+  font-size: 16px !important;
+
 }
 
 button {
   background-color: $grn;
   padding: 1.3rem;
-  font-size: 1.3rem;
+  font-size: 22px !important;
   border-radius: 0.6rem;
   color: white;
   border-style: none;
@@ -62,6 +63,13 @@ button {
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.349);
   transition: all 0.3s ease;
   cursor: pointer;
+
+  @media (max-width:600px) {
+    // background-color: rgb(153, 53, 140);
+    min-width: 100%;
+    width: 100% !important;
+    font-size: 2rem;
+  }
 
   &:hover {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.171);
@@ -80,20 +88,85 @@ button {
 .btnBox {
   // background-color: teal;
   display: flex;
+
   justify-content: space-between;
   align-items: center;
   padding: 0;
   margin: 4rem 0;
 
+  @media (max-width:600px) {
+    // background-color: rgb(153, 53, 140);
+    min-width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 300px;
+  }
+
   .btns {
-    // background-color: green;
+    display: flex;
     flex: 1;
     padding: 0;
     margin: 0;
+    min-width: 20rem;
+    max-width: 20rem;
+    justify-content: space-between;
+    //  background-color: chocolate;
+
+    @media (max-width:600px) {
+      //  background-color: rgb(30, 42, 210);
+      min-width: 90%;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  .plus,
+  .minus {
+    min-width: 70px;
+    min-height: 70px;
+    width: 70px;
+    height: 70px;
+    background-color: $graDark;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+
+    &:hover {
+      background-color: black;
+      transform: scale(1.1);
+    }
+  }
+
+  .points {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem;
+
+    h1 {
+      font-size: 40px;
+      margin: 0;
+    }
+  }
+
+  .points>span {
+    text-align: center;
+  }
+
+  .selected {
+    background-color: seagreen;
   }
 
   img {
-    //background-color: blue;
+    // background-color: blue;
     flex: 1;
     height: 15rem;
     object-fit: contain;

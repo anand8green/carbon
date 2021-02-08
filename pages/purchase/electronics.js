@@ -29,8 +29,6 @@ export default function Electronics() {
                         <h2>-</h2>
                     </div>
 
-
-
                     <div className="points">
                         <h1>£{num}</h1>
                         <span> in the past 12 months</span>
@@ -41,10 +39,6 @@ export default function Electronics() {
                     }}>
                         <h2>+</h2>
                     </div>
-
-
-
-
 
                 </div>
 

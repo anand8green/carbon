@@ -32,14 +32,10 @@ export default function Family() {
                         <h2>-</h2>
                     </div>
 
-
-
-
                     <div className="points">
                         <h1>{num}</h1>
                         <span> person</span>
                     </div>
-
 
                     <div className="plus" onClick={() => {
                         setNum(num + 1)
@@ -54,7 +50,6 @@ export default function Family() {
                     }}>
                         <h2>+</h2>
                     </div>
-
 
                 </div>
 
