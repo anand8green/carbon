@@ -20,16 +20,7 @@ export default function Clothes() {
             <div className="btnBox">
 
                 <div className="btns">
-                    <div className="plus" onClick={() => {
-                        setNum(num + 5)
-                        dispatch({ type: "addScore", value: purchaseCarbon })
-                    }}>
-                        <h2>+</h2>
-                    </div>
-                    <div className="points">
-                        <h1>£{num}</h1>
-                        <span> per month</span>
-                    </div>
+
                     <div className="minus" onClick={() => {
                         if (num >= 1) {
                             setNum(num - 5)
@@ -38,6 +29,25 @@ export default function Clothes() {
                     }}>
                         <h2>-</h2>
                     </div>
+
+
+
+                    <div className="points">
+                        <h1>£{num}</h1>
+                        <span> per month</span>
+                    </div>
+
+                    <div className="plus" onClick={() => {
+                        setNum(num + 5)
+                        dispatch({ type: "addScore", value: purchaseCarbon })
+                    }}>
+                        <h2>+</h2>
+                    </div>
+
+
+
+
+
                 </div>
 
                 <img src="/purchase/clothes.svg" alt="" />

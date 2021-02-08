@@ -22,6 +22,25 @@ export default function Family() {
             <div className="btnBox btnBoxHome">
 
                 <div className="btns">
+
+                    <div className="minus" onClick={() => {
+                        if (num >= 1) {
+                            setNum(num - 1)
+
+                        }
+                    }}>
+                        <h2>-</h2>
+                    </div>
+
+
+
+
+                    <div className="points">
+                        <h1>{num}</h1>
+                        <span> person</span>
+                    </div>
+
+
                     <div className="plus" onClick={() => {
                         setNum(num + 1)
                         console.log(num);
@@ -35,18 +54,8 @@ export default function Family() {
                     }}>
                         <h2>+</h2>
                     </div>
-                    <div className="points">
-                        <h1>{num}</h1>
-                        <span> person</span>
-                    </div>
-                    <div className="minus" onClick={() => {
-                        if (num >= 1) {
-                            setNum(num - 1)
 
-                        }
-                    }}>
-                        <h2>-</h2>
-                    </div>
+
                 </div>
 
                 <img src="/family.svg" alt="" />

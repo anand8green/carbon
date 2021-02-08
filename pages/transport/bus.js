@@ -18,16 +18,6 @@ export default function Bus() {
             <div className="btnBox">
 
                 <div className="btns">
-                    <div className="plus" onClick={() => {
-                        setNum(num + 1)
-                        dispatch({ type: "addScore", value: 0.1 })
-                    }}>
-                        <h2>+</h2>
-                    </div>
-                    <div className="points">
-                        <h1>{num}</h1>
-                        <span> hours per week</span>
-                    </div>
                     <div className="minus" onClick={() => {
                         if (num >= 1) {
                             setNum(num - 1)
@@ -36,7 +26,21 @@ export default function Bus() {
                     }}>
                         <h2>-</h2>
                     </div>
+
+                    <div className="points">
+                        <h1>{num}</h1>
+                        <span> hours per week</span>
+                    </div>
+
+                    <div className="plus" onClick={() => {
+                        setNum(num + 1)
+                        dispatch({ type: "addScore", value: 0.1 })
+                    }}>
+                        <h2>+</h2>
+                    </div>
+
                 </div>
+
                 <img src="/transport/bus.svg" alt="" />
 
             </div>

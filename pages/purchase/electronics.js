@@ -18,18 +18,8 @@ export default function Electronics() {
         >
             <h1>In the past 12 months, how much did you spend on electronics?</h1>
             <div className="btnBox">
-
                 <div className="btns">
-                    <div className="plus" onClick={() => {
-                        setNum(num + 50)
-                        dispatch({ type: "addScore", value: purchaseCarbon })
-                    }}>
-                        <h2>+</h2>
-                    </div>
-                    <div className="points">
-                        <h1>£{num}</h1>
-                        <span> in the past 12 months</span>
-                    </div>
+
                     <div className="minus" onClick={() => {
                         if (num >= 1) {
                             setNum(num - 50)
@@ -38,6 +28,24 @@ export default function Electronics() {
                     }}>
                         <h2>-</h2>
                     </div>
+
+
+
+                    <div className="points">
+                        <h1>£{num}</h1>
+                        <span> in the past 12 months</span>
+                    </div>
+                    <div className="plus" onClick={() => {
+                        setNum(num + 50)
+                        dispatch({ type: "addScore", value: purchaseCarbon })
+                    }}>
+                        <h2>+</h2>
+                    </div>
+
+
+
+
+
                 </div>
 
                 <img src="/purchase/electronics.svg" alt="" />

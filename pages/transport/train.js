@@ -18,16 +18,6 @@ export default function Train() {
             <div className="btnBox">
 
                 <div className="btns">
-                    <div className="plus" onClick={() => {
-                        setNum(num + 1)
-                        dispatch({ type: "addScore", value: 0.2 })
-                    }}>
-                        <h2>+</h2>
-                    </div>
-                    <div className="points">
-                        <h1>{num}</h1>
-                        <span> hours per week</span>
-                    </div>
                     <div className="minus" onClick={() => {
                         if (num >= 1) {
                             setNum(num - 1)
@@ -36,6 +26,19 @@ export default function Train() {
                     }}>
                         <h2>-</h2>
                     </div>
+
+                    <div className="points">
+                        <h1>{num}</h1>
+                        <span> hours per week</span>
+                    </div>
+
+                    <div className="plus" onClick={() => {
+                        setNum(num + 1)
+                        dispatch({ type: "addScore", value: 0.2 })
+                    }}>
+                        <h2>+</h2>
+                    </div>
+
                 </div>
                 <img src="/transport/train.svg" alt="" />
 

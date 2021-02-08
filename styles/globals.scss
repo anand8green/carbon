@@ -1,5 +1,18 @@
 @import './vars.scss';
 
+html {
+  //  font-size: 16px;
+
+  @media (max-width: 800px) {
+    font-size: 13px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 11px;
+  }
+
+}
+
 html,
 body {
   margin: 0;
@@ -61,10 +74,11 @@ button {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0;
+  //  background-color: blueviolet;
 }
 
 .btnBox {
-  //  background-color: teal;
+  // background-color: teal;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,14 +86,14 @@ button {
   margin: 4rem 0;
 
   .btns {
-    //   background-color: green;
+    // background-color: green;
     flex: 1;
     padding: 0;
     margin: 0;
   }
 
   img {
-    // background-color: blue;
+    //background-color: blue;
     flex: 1;
     height: 15rem;
     object-fit: contain;
@@ -87,24 +101,41 @@ button {
   }
 }
 
-.score {
-  width: 20rem;
+.topBar {
   display: flex;
-  height: 3rem;
-  margin-bottom: 5rem;
+  justify-content: space-between;
 
-  span {
-    color: $graDark;
-    font-size: 1.3rem;
-    font-family: Bold;
-    display: flex;
-    align-items: center;
-    margin-left: 1rem;
+  .greenLogo {
+    //  background-color: pink;
+    width: 10rem;
   }
 
-  img {
-    width: 15%;
-    object-fit: contain;
+  .score {
+    width: 20rem;
+    display: flex;
+    height: 3rem;
+    margin-bottom: 5rem;
+    //  background-color: red;
 
+    @media (max-width: 800px) {
+      // background-color: rgb(0, 255, 170);
+      justify-content: flex-end;
+    }
+
+    span {
+      color: $graDark;
+      font-size: 1.3rem;
+      font-family: Bold;
+      display: flex;
+      align-items: center;
+      margin-left: 1rem;
+      // background-color: cadetblue;
+    }
+
+    img {
+      //  background-color: chartreuse;
+      object-fit: contain;
+
+    }
   }
 }

@@ -30,16 +30,7 @@ export default function Flight() {
 
                     {/* 1 */}
                     <div className="btns">
-                        <div className="plus" onClick={() => {
-                            setFour(four + 1)
-                            dispatch({ type: "addScore", value: flyFourHoursCarbon })
-                        }}>
-                            <h2>+</h2>
-                        </div>
-                        <div className="points">
-                            <h1>{four}</h1>
-                            <span> Under 4 hours flights</span>
-                        </div>
+
                         <div className="minus" onClick={() => {
                             if (four >= 1) {
                                 setFour(four - 1)
@@ -48,21 +39,23 @@ export default function Flight() {
                         }}>
                             <h2>-</h2>
                         </div>
+                        <div className="points">
+                            <h1>{four}</h1>
+                            <span> Under 4 hours flights</span>
+                        </div>
+                        <div className="plus" onClick={() => {
+                            setFour(four + 1)
+                            dispatch({ type: "addScore", value: flyFourHoursCarbon })
+                        }}>
+                            <h2>+</h2>
+                        </div>
+
                     </div>
 
                     {/* 2 */}
 
                     <div className="btns">
-                        <div className="plus" onClick={() => {
-                            setEight(eight + 1)
-                            dispatch({ type: "addScore", value: flyEightHoursCarbon })
-                        }}>
-                            <h2>+</h2>
-                        </div>
-                        <div className="points">
-                            <h1>{eight}</h1>
-                            <span> 4-8 hours flights</span>
-                        </div>
+
                         <div className="minus" onClick={() => {
                             if (eight >= 1) {
                                 setEight(eight - 1)
@@ -71,21 +64,24 @@ export default function Flight() {
                         }}>
                             <h2>-</h2>
                         </div>
+
+                        <div className="points">
+                            <h1>{eight}</h1>
+                            <span> 4-8 hours flights</span>
+                        </div>
+
+                        <div className="plus" onClick={() => {
+                            setEight(eight + 1)
+                            dispatch({ type: "addScore", value: flyEightHoursCarbon })
+                        }}>
+                            <h2>+</h2>
+                        </div>
+
                     </div>
 
                     {/* 3 */}
 
                     <div className="btns">
-                        <div className="plus" onClick={() => {
-                            setTw(tw + 1)
-                            dispatch({ type: "addScore", value: flyTwelveHoursCarbon })
-                        }}>
-                            <h2>+</h2>
-                        </div>
-                        <div className="points">
-                            <h1>{tw}</h1>
-                            <span> 8-12 hours flights</span>
-                        </div>
                         <div className="minus" onClick={() => {
                             if (tw >= 1) {
                                 setTw(tw - 1)
@@ -94,21 +90,24 @@ export default function Flight() {
                         }}>
                             <h2>-</h2>
                         </div>
+
+                        <div className="points">
+                            <h1>{tw}</h1>
+                            <span> 8-12 hours flights</span>
+                        </div>
+
+                        <div className="plus" onClick={() => {
+                            setTw(tw + 1)
+                            dispatch({ type: "addScore", value: flyTwelveHoursCarbon })
+                        }}>
+                            <h2>+</h2>
+                        </div>
+
                     </div>
 
                     {/* 4 */}
 
                     <div className="btns">
-                        <div className="plus" onClick={() => {
-                            setOverTw(overTw + 1)
-                            dispatch({ type: "addScore", value: flyOverTweleveCarbon })
-                        }}>
-                            <h2>+</h2>
-                        </div>
-                        <div className="points">
-                            <h1>{overTw}</h1>
-                            <span> Over 12 hours flights</span>
-                        </div>
                         <div className="minus" onClick={() => {
                             if (overTw >= 1) {
                                 setOverTw(overTw - 1)
@@ -117,6 +116,17 @@ export default function Flight() {
                         }}>
                             <h2>-</h2>
                         </div>
+                        <div className="points">
+                            <h1>{overTw}</h1>
+                            <span> Over 12 hours flights</span>
+                        </div>
+                        <div className="plus" onClick={() => {
+                            setOverTw(overTw + 1)
+                            dispatch({ type: "addScore", value: flyOverTweleveCarbon })
+                        }}>
+                            <h2>+</h2>
+                        </div>
+
                     </div>
 
                 </div>

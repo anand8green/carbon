@@ -70,16 +70,7 @@ export default function Car() {
                     >
 
                         <div className="btns">
-                            <div className="plus" onClick={() => {
-                                setNum(num + 1)
-                                dispatch({ type: "addScore", value: value })
-                            }}>
-                                <h2>+</h2>
-                            </div>
-                            <div className="points">
-                                <h1>{num}</h1>
-                                <span> hours per week</span>
-                            </div>
+
                             <div className="minus" onClick={() => {
                                 if (num >= 1) {
                                     setNum(num - 1)
@@ -88,6 +79,19 @@ export default function Car() {
                             }}>
                                 <h2>-</h2>
                             </div>
+
+                            <div className="points">
+                                <h1>{num}</h1>
+                                <span> hours per week</span>
+                            </div>
+
+                            <div className="plus" onClick={() => {
+                                setNum(num + 1)
+                                dispatch({ type: "addScore", value: value })
+                            }}>
+                                <h2>+</h2>
+                            </div>
+
                         </div>
                         <img src="/transport/car.svg" alt="" />
 
