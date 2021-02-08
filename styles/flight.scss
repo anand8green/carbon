@@ -1,13 +1,27 @@
 @import './vars.scss';
 
 .allBtns {
+    // background-color: rgb(155, 2, 27);
+    margin: -1rem 0;
 
     .btns {
-        margin-bottom: 2rem;
+
+        //     background-color: rgb(171, 0, 29);
+        min-width: 350px;
+        max-width: 350px;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+
+        .points {
+            min-width: 200px;
+            //          background-color: purple;
+        }
     }
 }
 
 .flightPic {
-
+    margin-left: 2rem;
     height: 25rem !important;
 }

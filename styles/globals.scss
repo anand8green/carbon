@@ -95,7 +95,7 @@ button {
   margin: 4rem 0;
 
   @media (max-width:600px) {
-    // background-color: rgb(153, 53, 140);
+    //background-color: rgb(153, 53, 140);
     min-width: 100%;
     justify-content: center;
     flex-wrap: wrap;
@@ -107,14 +107,17 @@ button {
     flex: 1;
     padding: 0;
     margin: 0;
-    min-width: 20rem;
-    max-width: 20rem;
-    justify-content: space-between;
-    //  background-color: chocolate;
+    min-width: 300px;
+    max-width: 300px;
+    width: 300px;
+    justify-content: flex-start;
+    // background-color: chocolate;
 
     @media (max-width:600px) {
-      //  background-color: rgb(30, 42, 210);
-      min-width: 90%;
+      justify-content: center;
+      margin: 3rem 0;
+      //   background-color: rgb(30, 42, 210);
+
     }
 
     h2 {
@@ -150,6 +153,8 @@ button {
     align-items: center;
     justify-content: space-between;
     padding: 0.3rem;
+    //  background-color: pink;
+    width: 200px;
 
     h1 {
       font-size: 40px;
@@ -159,6 +164,7 @@ button {
 
   .points>span {
     text-align: center;
+    font-size: 16px;
   }
 
   .selected {
@@ -166,7 +172,7 @@ button {
   }
 
   img {
-    // background-color: blue;
+    //  background-color: blue;
     flex: 1;
     height: 15rem;
     object-fit: contain;

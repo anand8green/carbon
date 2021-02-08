@@ -3,44 +3,47 @@
 .transport {
   display: flex;
   flex-wrap: wrap;
+  //justify-content: center;
   max-width: 60rem;
-  margin: 3rem 0;
+  margin: 2rem 0;
+
+  @media (max-width:600px) {
+    justify-content: center;
+
+  }
 }
 
 //////  *** SECOND PART START HERE
 
-// .btnBox {
-
-//   img {
-//     width: 20rem;
-//     height: 8rem;
-//     object-fit: contain;
-//     margin: 3rem 0;
-//   }
-// }
-
 .circle {
-  width: 200px;
-  height: 200px;
+  width: 15rem;
+  height: 15rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 5.5rem;
-  margin-bottom: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 0.5rem;
   flex-direction: column;
-  padding: 1.6rem;
+  padding: 1rem;
   transform: scale(1);
   transition: all 0.5s ease;
   border-radius: 50%;
   cursor: pointer;
-
   //background-color: red;
 
   img {
     display: block;
-    object-fit: scale-down;
-    height: 120px;
+    object-fit: contain;
     padding: 1.2rem;
+    width: 100%;
+    object-fit: contain;
+    height: 70%;
+
+    @media (max-width:600px) {
+      // background-color: rgb(153, 53, 140);
+    }
+
+    //background-color: chocolate;
 
   }
 
